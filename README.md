@@ -22,9 +22,8 @@ The shell supports SIGINT (CTRL-C) and SIGSTP (CTRL-Z) commands. SIGINT will ter
 toggle the ability to run background processes.
 
 
-Finally, there are three built-in commands: exit, cd, and status. `exit` will exit the shell, killing an background processes currently
-running first. `cd` will change the working direcotry of the shell. `status` will print the exit status of the last foreground process
-completed.
+Finally, there are three built-in commands: exit, cd, and status. `exit` will exit the shell, killing an background processes currently running first. A linked list data structure is used to monitor all currently running background processes. `cd` will
+change the working direcotry of the shell. `status` will print the exit status of the last foreground process completed.
 
 # Disclaimer
 This program has only been testing on LINUX operating systems, and should not be trusted on Mac or Windows machines!
